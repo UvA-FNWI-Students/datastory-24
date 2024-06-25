@@ -1,22 +1,12 @@
-# Dataset and description
+# Introduction
 
-With the datasets that we have chosen, we still had to clean them to be able to merge them into 1 understandable and usable dataset. This was tricky due to the different ways the datasets described some countries. In the next chapters we will go through the process in an way that can be replicated and understood.
+In today's world people often believe the more money they are able to make, the happier they become. This is why many in the West strive for the best paying jobs in our capitalist society to achieve economic freedom. People from the former Sovjet Union don't share this near obsession and believe happiness comes from other places due to their communist past. This is one of the main ways Europe is still devided even after the iron curtain has fallen nearly 35 years ago.
 
-## Cleaning
+This data story aims to determine wether or not economic freedom does corrilate with happiness. For this we will use datasets from Kaggle, an online collection of datasets. The first dataset contains the Happiness Index and the second one the Freedom Index of the World in 2019. They use multiple underlying variables to make determine the ranking, which we will explore during our investigation.
 
-We began the data cleaning process by thoroughly cleaning the Freedom dataset. This involved identifying and removing redundant columns to streamline the dataset and enhance its usability. The original dataset contained 123 columns, which we reduced to 8 essential columns using a Python script. Additionally, we filtered the dataset to include only European countries, narrowing the focus from a global scope to Europe specifically. This filtering was also performed using a Python script.
+In particular, we will explore the correlation between the happiness of a country and their different forms of economic freedom.
 
-For the Happiness dataset, we improved readability and accessibility by renaming all the columns to shorter, easier-to-read names. Like the Freedom dataset, we filtered the Happiness dataset to include only European countries, focusing our analysis on Europe.
-
-In the second phase of our data cleaning process, we merged the cleaned Freedom and Happiness datasets into one comprehensive dataset. We ensured the merged dataset was free of duplicates, making it ready for further analysis. 
-
-## Variables Description
-
-The variables in the cleaned dataset can be organised and classified in the following manner:
-
-- Continuous / Interval: `hi_score`, `hi_gdp`, `hi_support`, `hi_expectancy`
-- Continuous / Ordinal: `hi_choice`, `hi_generosity`
-- Discrete / Ordinal: `hi_corruption`
-- Discrete / Nominal: `country`
-
-All other variables are continuous and interval expect `ef_rank` which is discrete and ordinal. This thorough cleaning and merging process provided us with a streamlined and focused dataset, optimized for subsequent analysis and visualization.
+**Authors**
+- Hugo Krijgsman
+- Ingmar Hartman
+- Julius de Groot
