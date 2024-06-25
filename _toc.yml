@@ -2,7 +2,10 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: docs/notebook
+root: docs/introduction
 chapters:
-- file: docs/introduction
+- file: docs/preprocessing
+- file: docs/notebook
+- file: docs/reflection
+- file: docs/distribution
 
