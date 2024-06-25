@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Introduction &#8212; Jupyter Book Template</title>
+    <title>Dataset and description &#8212; Jupyter Book Template</title>
   
   
   
@@ -169,7 +169,7 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1 current active">
                 <a class="reference internal" href="#">
-                    Introduction
+                    Dataset and description
                 </a>
             </li>
         </ul>
@@ -351,7 +351,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -362,11 +364,20 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Introduction</h1>
+    <h1>Dataset and description</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cleaning">Cleaning</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variables-description">Variables Description</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -376,17 +387,26 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="introduction">
-<h1>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h1>
-<p>In today’s world people often believe the more money they are able to make, the happier they become. This is why many in the West strive for the best paying jobs in our capitalist society to achieve economic freedom. People from the former Sovjet Union don’t share this near obsession and believe happiness comes from other places due to their communist past. This is one of the main ways Europe is still devided even after the iron curtain has fallen nearly 35 years ago.</p>
-<p>This data story aims to determine wether or not economic freedom does corrilate with happiness. For this we will use datasets from Kaggle, an online collection of datasets. The first dataset contains the Happiness Index and the second one the Freedom Index of the World in 2019. They use multiple underlying variables to make determine the ranking, which we will explore during our investigation.</p>
-<p>In particular, we will explore the correlation between the happiness of a country and their different forms of economic freedom.</p>
-<p><strong>Authors</strong></p>
+  <section class="tex2jax_ignore mathjax_ignore" id="dataset-and-description">
+<h1>Dataset and description<a class="headerlink" href="#dataset-and-description" title="Link to this heading">#</a></h1>
+<p>With the datasets that we have chosen, we still had to clean them to be able to merge them into 1 understandable and usable dataset. This was tricky due to the different ways the datasets described some countries. In the next chapters we will go through the process in an way that can be replicated and understood.</p>
+<section id="cleaning">
+<h2>Cleaning<a class="headerlink" href="#cleaning" title="Link to this heading">#</a></h2>
+<p>We began the data cleaning process by thoroughly cleaning the Freedom dataset. This involved identifying and removing redundant columns to streamline the dataset and enhance its usability. The original dataset contained 123 columns, which we reduced to 8 essential columns using a Python script. Additionally, we filtered the dataset to include only European countries, narrowing the focus from a global scope to Europe specifically. This filtering was also performed using a Python script.</p>
+<p>For the Happiness dataset, we improved readability and accessibility by renaming all the columns to shorter, easier-to-read names. Like the Freedom dataset, we filtered the Happiness dataset to include only European countries, focusing our analysis on Europe.</p>
+<p>In the second phase of our data cleaning process, we merged the cleaned Freedom and Happiness datasets into one comprehensive dataset. We ensured the merged dataset was free of duplicates, making it ready for further analysis.</p>
+</section>
+<section id="variables-description">
+<h2>Variables Description<a class="headerlink" href="#variables-description" title="Link to this heading">#</a></h2>
+<p>The variables in the cleaned dataset can be organised and classified in the following manner:</p>
 <ul class="simple">
-<li><p>Hugo Krijgsman</p></li>
-<li><p>Ingmar Hartman</p></li>
-<li><p>Julius de Groot</p></li>
+<li><p>Continuous / Interval: <code class="docutils literal notranslate"><span class="pre">hi_score</span></code>, <code class="docutils literal notranslate"><span class="pre">hi_gdp</span></code>, <code class="docutils literal notranslate"><span class="pre">hi_support</span></code>, <code class="docutils literal notranslate"><span class="pre">hi_expectancy</span></code></p></li>
+<li><p>Continuous / Ordinal: <code class="docutils literal notranslate"><span class="pre">hi_choice</span></code>, <code class="docutils literal notranslate"><span class="pre">hi_generosity</span></code></p></li>
+<li><p>Discrete / Ordinal: <code class="docutils literal notranslate"><span class="pre">hi_corruption</span></code></p></li>
+<li><p>Discrete / Nominal: <code class="docutils literal notranslate"><span class="pre">country</span></code></p></li>
 </ul>
+<p>All other variables are continuous and interval expect <code class="docutils literal notranslate"><span class="pre">ef_rank</span></code> which is discrete and ordinal. This thorough cleaning and merging process provided us with a streamlined and focused dataset, optimized for subsequent analysis and visualization.</p>
+</section>
 <div class="toctree-wrapper compound">
 </div>
 </section>
@@ -436,6 +456,22 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cleaning">Cleaning</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variables-description">Variables Description</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
