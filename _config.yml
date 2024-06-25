@@ -3,6 +3,7 @@
 
 title: Europe's Economics And Happiness # Change this to your book title.
 author: N2 # Change this to your name (or your team/organization name).
+logo: "docs/images/favicon.jpeg"
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
