@@ -25,6 +25,7 @@ repository:
 html:
   use_issues_button: false
   use_repository_button: true
+  favicon: "docs/images/favicon.jpeg"
 
 # Add launch buttons
 launch_buttons:
