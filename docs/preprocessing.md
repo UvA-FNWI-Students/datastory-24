@@ -4,11 +4,11 @@ With the datasets that we have chosen, we still had to clean them to be able to 
 
 ## Cleaning
 
-We began the data cleaning process by thoroughly cleaning the Freedom dataset. This involved identifying and removing redundant columns to streamline the dataset and enhance its usability. The original dataset contained 123 columns, which we reduced to 8 essential columns using a Python script. Additionally, we filtered the dataset to include only European countries, narrowing the focus from a global scope to Europe specifically. This filtering was also performed using a Python script.
+We began the data cleaning process by thoroughly cleaning the Freedom dataset. This involved identifying and removing redundant columns to streamline the dataset and enhance its usability. The original dataset contained 123 columns, which we reduced to 8 essential columns using a Python script. Additionally, we filtered the dataset to include only European countries, narrowing the focus from a global scope to Europe specifically. This filtering was also performed using a Python script. We also improved readability and accessibility by renaming all the columns to shorter, easier-to-read names.
 
-For the Happiness dataset, we improved readability and accessibility by renaming all the columns to shorter, easier-to-read names. Like the Freedom dataset, we filtered the Happiness dataset to include only European countries, focusing our analysis on Europe.
+For the Happiness dataset, we filtered the dataset to include only European countries, focusing our analysis on Europe. The column names were retained as they were.
 
-In the second phase of our data cleaning process, we merged the cleaned Freedom and Happiness datasets into one comprehensive dataset. We ensured the merged dataset was free of duplicates, making it ready for further analysis. 
+In the second phase of our data cleaning process, we merged the cleaned Freedom and Happiness datasets into one comprehensive dataset. We ensured the merged dataset was free of duplicates, making it ready for further analysis.
 
 ## Variables Description
 
