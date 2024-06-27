@@ -14,9 +14,9 @@ In the second phase of our data cleaning process, we merged the cleaned Freedom 
 
 The variables in the cleaned dataset can be organised and classified in the following manner:
 
-- Continuous / Interval: `hi_score`, `hi_gdp`, `hi_support`, `hi_expectancy`
-- Continuous / Ordinal: `hi_choice`, `hi_generosity`
-- Discrete / Ordinal: `hi_corruption`
-- Discrete / Nominal: `country`
+- Continuous / Interval: Happiness Score, GDP per capita, Social support, Healthy life expectancy
+- Continuous / Ordinal: Freedom to make life choices, Generosity
+- Discrete / Ordinal: Perceptions of corruption
+- Discrete / Nominal: Country
 
 All other variables are continuous and interval expect `ef_rank` which is discrete and ordinal. This thorough cleaning and merging process provided us with a streamlined and focused dataset, optimized for subsequent analysis and visualization.
