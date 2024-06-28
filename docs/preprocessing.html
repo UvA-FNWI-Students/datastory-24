@@ -182,9 +182,11 @@
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Dataset and description</a></li>
 <li class="toctree-l1"><a class="reference internal" href="notebook.html"><strong>Economic Freedom and Happiness Across Europe</strong></a></li>
-
 <li class="toctree-l1"><a class="reference internal" href="reflection.html">Reflection</a></li>
 <li class="toctree-l1"><a class="reference internal" href="distribution.html">Work Distribution</a></li>
+
+
+
 </ul>
 
     </div>
@@ -363,23 +365,23 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="dataset-and-description">
 <h1>Dataset and description<a class="headerlink" href="#dataset-and-description" title="Link to this heading">#</a></h1>
-<p>With the datasets that we have chosen, we still had to clean them to be able to merge them into 1 understandable and usable dataset. This was tricky due to the different ways the datasets described some countries. In the next chapters we will go through the process in an way that can be replicated and understood.</p>
+<p>With the datasets we have chosen, we still had to clean them to be able to merge them into 1 understandable and usable dataset. This was tricky due to the different ways the datasets described some countries. In the next chapters, we will go through the process in a way that can be replicated and understood.</p>
 <section id="cleaning">
 <h2>Cleaning<a class="headerlink" href="#cleaning" title="Link to this heading">#</a></h2>
 <p>We began the data cleaning process by thoroughly cleaning the Freedom dataset. This involved identifying and removing redundant columns to streamline the dataset and enhance its usability. The original dataset contained 123 columns, which we reduced to 8 essential columns using a Python script. Additionally, we filtered the dataset to include only European countries, narrowing the focus from a global scope to Europe specifically. This filtering was also performed using a Python script. We also improved readability and accessibility by renaming all the columns to shorter, easier-to-read names.</p>
-<p>For the Happiness dataset, we filtered the dataset to include only European countries, focusing our analysis on Europe. The column names were retained as they were.</p>
-<p>In the second phase of our data cleaning process, we merged the cleaned Freedom and Happiness datasets into one comprehensive dataset. We ensured the merged dataset was free of duplicates, making it ready for further analysis.</p>
+<p>For the Happiness dataset, we filtered the dataset to include only European countries, focusing our analysis on Europe. The column names were retained as they were.
+In the second phase of our data cleaning process, we merged the cleaned Freedom and Happiness datasets into one comprehensive dataset. We ensured the merged dataset was free of duplicates, making it ready for further analysis.</p>
 </section>
 <section id="variables-description">
 <h2>Variables Description<a class="headerlink" href="#variables-description" title="Link to this heading">#</a></h2>
-<p>The variables in the cleaned dataset can be organised and classified in the following manner:</p>
+<p>The variables in the cleaned dataset can be organized and classified in the following manner:</p>
 <ul class="simple">
-<li><p>Continuous / Interval: Happiness Score, GDP per capita, Social support, Healthy life expectancy</p></li>
-<li><p>Continuous / Ordinal: Freedom to make life choices, Generosity</p></li>
-<li><p>Discrete / Ordinal: Perceptions of corruption</p></li>
-<li><p>Discrete / Nominal: Country</p></li>
+<li><p><em>Continuous / Interval</em>: <code class="docutils literal notranslate"><span class="pre">Happiness</span> <span class="pre">Score</span></code>, <code class="docutils literal notranslate"><span class="pre">GDP</span> <span class="pre">per</span> <span class="pre">capita</span></code>, <code class="docutils literal notranslate"><span class="pre">Social</span> <span class="pre">support</span></code>, <code class="docutils literal notranslate"><span class="pre">Healthy</span> <span class="pre">life</span> <span class="pre">expectancy</span></code>, <code class="docutils literal notranslate"><span class="pre">Access</span> <span class="pre">to</span> <span class="pre">Sound</span> <span class="pre">Money</span></code></p></li>
+<li><p><em>Continuous / Ordinal</em>: <code class="docutils literal notranslate"><span class="pre">Freedom</span> <span class="pre">to</span> <span class="pre">make</span> <span class="pre">life</span> <span class="pre">choices</span></code>, <code class="docutils literal notranslate"><span class="pre">Generosity</span></code>, <code class="docutils literal notranslate"><span class="pre">Legal</span> <span class="pre">System</span> <span class="pre">and</span> <span class="pre">Property</span> <span class="pre">Rights</span></code></p></li>
+<li><p><em>Discrete / Ordinal</em>: <code class="docutils literal notranslate"><span class="pre">Perceptions</span> <span class="pre">of</span> <span class="pre">corruption</span></code>, <code class="docutils literal notranslate"><span class="pre">Regulation</span> <span class="pre">of</span> <span class="pre">Credit,</span> <span class="pre">Labor,</span> <span class="pre">and</span> <span class="pre">Business</span></code>, <code class="docutils literal notranslate"><span class="pre">Freedom</span> <span class="pre">score</span></code></p></li>
+<li><p><em>Discrete / Nominal</em>: <code class="docutils literal notranslate"><span class="pre">Country</span></code>, <code class="docutils literal notranslate"><span class="pre">Size</span> <span class="pre">of</span> <span class="pre">Government</span></code>, <code class="docutils literal notranslate"><span class="pre">Freedom</span> <span class="pre">to</span> <span class="pre">Trade</span> <span class="pre">Internationally</span></code></p></li>
 </ul>
-<p>All other variables are continuous and interval expect <code class="docutils literal notranslate"><span class="pre">ef_rank</span></code> which is discrete and ordinal. This thorough cleaning and merging process provided us with a streamlined and focused dataset, optimized for subsequent analysis and visualization.</p>
+<p>This thorough cleaning and merging process provided us with a streamlined and focused dataset, optimized for subsequent analysis and visualization.</p>
 </section>
 </section>
 
