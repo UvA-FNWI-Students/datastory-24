@@ -6,6 +6,6 @@ This data story aims to determine whether financial protection correlates with h
 In particular, we will explore the correlation between the happiness of a country and its financial legal protection.
 
 *Authors*
-- Hugo Krijgsman
-- Ingmar Hartman
-- Julius de Groot
+- **Hugo Krijgsman**
+- **Ingmar Hartman**
+- **Julius de Groot**
